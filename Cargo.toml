@@ -2,6 +2,13 @@
 name = "base16-palettes"
 version = "0.1.0"
 edition = "2021"
+license = "MIT OR Apache-2.0"
+authors = ["TylerBloom <tylerbloom2222@gmail.com>"]
+categories = ["themes", "no-std", "no-std::no-alloc"]
+keywords = ["theme", "themes", "no_std"]
+description = "A representation of the Base16 palettes in Rust"
+readme = "README.md"
+repository = "https://github.com/TylerBloom/base16-palettes"
 
 [features]
 apprentice = []
