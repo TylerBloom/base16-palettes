@@ -15,7 +15,7 @@ pub enum DefaultPalette {
 
 impl Default for DefaultPalette {
     fn default() -> Self {
-        Self::DefaultDark(DefaultDark::default())
+        Self::DefaultDark(DefaultDark)
     }
 }
 
