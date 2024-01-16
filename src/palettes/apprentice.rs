@@ -5,9 +5,8 @@ use super::create_palette;
 #[enum_dispatch(Base16Palette)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum ApprenticePalette {
-    Apprentice(Apprentice),
+    Apprentice,
 }
-
 create_palette! {
     Apprentice,
     "262626",

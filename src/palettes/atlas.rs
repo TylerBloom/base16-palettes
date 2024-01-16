@@ -5,9 +5,8 @@ use super::create_palette;
 #[enum_dispatch(Base16Palette)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum AtlasPalette {
-    Atlas(Atlas),
+    Atlas,
 }
-
 create_palette! {
     Atlas,
     "002635",
@@ -22,8 +21,8 @@ create_palette! {
     "f08e48",
     "ffcc1b",
     "7fc06e",
-    "5dd7b9",
     "14747e",
+    "5dd7b9",
     "9a70a4",
     "c43060",
 }

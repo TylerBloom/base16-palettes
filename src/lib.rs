@@ -1,5 +1,5 @@
-
 pub mod palettes;
+
 use enum_dispatch::enum_dispatch;
 use palettes::*;
 
@@ -13,13 +13,139 @@ pub enum Palette {
     AtelierPalette,
     #[cfg(feature = "atlas")]
     AtlasPalette,
+    #[cfg(feature = "black_metal")]
+    BlackMetalPalette,
+    #[cfg(feature = "brogrammer")]
+    BrogrammerPalette,
+    #[cfg(feature = "brush_trees")]
+    BrushTreesPalette,
+    #[cfg(feature = "circus")]
+    CircusPalette,
+    #[cfg(feature = "classic")]
+    ClassicPalette,
+    #[cfg(feature = "codeschool")]
+    CodeschoolPalette,
+    #[cfg(feature = "colors")]
+    ColorsPalette,
+    #[cfg(feature = "cupertino")]
+    CupertinoPalette,
+    #[cfg(feature = "danqing")]
+    DanqingPalette,
+    #[cfg(feature = "darcula")]
+    DarculaPalette,
+    #[cfg(feature = "darkviolet")]
+    DarkvioletPalette,
+    #[cfg(feature = "dracula")]
+    DraculaPalette,
+    #[cfg(feature = "equilibrium")]
+    EquilibriumPalette,
+    #[cfg(feature = "espresso")]
+    EspressoPalette,
+    #[cfg(feature = "eva")]
+    EvaPalette,
+    #[cfg(feature = "framer")]
+    FramerPalette,
+    #[cfg(feature = "fruit_soda")]
+    FruitSodaPalette,
+    #[cfg(feature = "gigavolt")]
+    GigavoltPalette,
+    #[cfg(feature = "github")]
+    GithubPalette,
     #[cfg(feature = "gruvbox")]
     GruvboxPalette,
+    #[cfg(feature = "hardcore")]
+    HardcorePalette,
+    #[cfg(feature = "heetch")]
+    HeetchPalette,
+    #[cfg(feature = "helios")]
+    HeliosPalette,
+    #[cfg(feature = "horizon")]
+    HorizonPalette,
+    #[cfg(feature = "humanoid")]
+    HumanoidPalette,
+    #[cfg(feature = "icy")]
+    IcyPalette,
+    #[cfg(feature = "kimber")]
+    KimberPalette,
+    #[cfg(feature = "materia")]
+    MateriaPalette,
+    #[cfg(feature = "material")]
+    MaterialPalette,
+    #[cfg(feature = "material_vivid")]
+    MaterialVividPalette,
+    #[cfg(feature = "mellow")]
+    MellowPalette,
+    #[cfg(feature = "mexico_light")]
+    MexicoLightPalette,
+    #[cfg(feature = "nebula")]
+    NebulaPalette,
+    #[cfg(feature = "nord")]
+    NordPalette,
+    #[cfg(feature = "nova")]
+    NovaPalette,
+    #[cfg(feature = "one_light")]
+    OneLightPalette,
+    #[cfg(feature = "onedark")]
+    OnedarkPalette,
+    #[cfg(feature = "outrun")]
+    OutrunPalette,
+    #[cfg(feature = "papercolor")]
+    PapercolorPalette,
+    #[cfg(feature = "pasque")]
+    PasquePalette,
+    #[cfg(feature = "pinky")]
+    PinkyPalette,
+    #[cfg(feature = "porple")]
+    PorplePalette,
+    #[cfg(feature = "purpledream")]
+    PurpleDreamPalette,
+    #[cfg(feature = "qualia")]
+    QualiaPalette,
+    #[cfg(feature = "rebecca")]
+    RebeccaPalette,
+    #[cfg(feature = "rose_pine")]
+    RosePinePalette,
+    #[cfg(feature = "sagelight")]
+    SagelightPalette,
+    #[cfg(feature = "sakura")]
+    SakuraPalette,
+    #[cfg(feature = "sandcastle")]
+    SandcastlePalette,
+    #[cfg(feature = "shades_of_purple")]
+    ShadesOfPurplePalette,
+    #[cfg(feature = "silk")]
+    SilkPalette,
+    #[cfg(feature = "snazzy")]
+    SnazzyPalette,
+    #[cfg(feature = "solarflare")]
+    SolarflarePalette,
+    #[cfg(feature = "summercamp")]
+    SummercampPalette,
+    #[cfg(feature = "summerfruit")]
+    SummerfruitPalette,
+    #[cfg(feature = "synth_midnight")]
+    SynthMidnightPalette,
+    #[cfg(feature = "tender")]
+    TenderPalette,
+    #[cfg(feature = "twilight")]
+    TwilightPalette,
+    #[cfg(feature = "unikitty")]
+    UnikittyPalette,
+    #[cfg(feature = "vice")]
+    VicePalette,
+    #[cfg(feature = "windows")]
+    WindowsPalette,
+    #[cfg(feature = "woodland")]
+    WoodlandPalette,
+    #[cfg(feature = "xcode_dusk")]
+    XcodeDuskPalette,
+    #[cfg(feature = "zenburn")]
+    ZenburnPalette,
 }
 
 impl Default for Palette {
     fn default() -> Self {
-        Self::DefaultPalette(default::DefaultPalette::default())
+        Self::DefaultPalette(DefaultPalette::default())
     }
 }
 
@@ -153,4 +279,3 @@ impl Base16Color {
         Self::Shade(Base16Shade::Light(Shade::Lightest))
     }
 }
-

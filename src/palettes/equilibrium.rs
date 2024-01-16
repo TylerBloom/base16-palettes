@@ -1,0 +1,88 @@
+use enum_dispatch::enum_dispatch;
+
+use super::create_palette;
+
+#[enum_dispatch(Base16Palette)]
+#[derive(Debug, Clone, Copy, PartialEq, Eq)]
+pub enum EquilibriumPalette {
+    EquilibriumGrayLight,
+    EquilibriumGrayDark,
+    EquilibriumLight,
+    EquilibriumDark,
+}
+create_palette! {
+    EquilibriumGrayLight,
+    "f1f1f1",
+    "e2e2e2",
+    "d4d4d4",
+    "777777",
+    "5e5e5e",
+    "474747",
+    "303030",
+    "1b1b1b",
+    "d02023",
+    "bf3e05",
+    "9d6f00",
+    "637200",
+    "007a72",
+    "0073b5",
+    "4e66b6",
+    "c42775",
+}
+create_palette! {
+    EquilibriumGrayDark,
+    "111111",
+    "1b1b1b",
+    "262626",
+    "777777",
+    "919191",
+    "ababab",
+    "c6c6c6",
+    "e2e2e2",
+    "f04339",
+    "df5923",
+    "bb8801",
+    "7f8b00",
+    "00948b",
+    "008dd1",
+    "6a7fd2",
+    "e3488e",
+}
+create_palette! {
+    EquilibriumLight,
+    "f5f0e7",
+    "e7e2d9",
+    "d8d4cb",
+    "73777f",
+    "5a5f66",
+    "43474e",
+    "2c3138",
+    "181c22",
+    "d02023",
+    "bf3e05",
+    "9d6f00",
+    "637200",
+    "007a72",
+    "0073b5",
+    "4e66b6",
+    "c42775",
+}
+create_palette! {
+    EquilibriumDark,
+    "0c1118",
+    "181c22",
+    "22262d",
+    "7b776e",
+    "949088",
+    "afaba2",
+    "cac6bd",
+    "e7e2d9",
+    "f04339",
+    "df5923",
+    "bb8801",
+    "7f8b00",
+    "00948b",
+    "008dd1",
+    "6a7fd2",
+    "e3488e",
+}
