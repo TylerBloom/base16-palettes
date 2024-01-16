@@ -1,8 +1,38 @@
+//! This crate contains representations of all of the major
+//! [Base16](https://github.com/chriskempson/base16-schemes-source?tab=readme-ov-file) themes.
+//! Color representation is split into two parts, the universal base 16 color and the palette. A
+//! color is represented by a [`Base16Color`], which is then rendered into either a RGB tuple of
+//! `u8`s or into a hex string.
+//!
+//! Each collection of themes is gated by a feature flag to minimize the number of palettes you
+//! have to compile.
+//!
+//! Lastly, this crate is fully `no_std`.
+
+#![no_std]
+#![warn(rust_2018_idioms)]
+#![deny(
+    missing_debug_implementations,
+    rustdoc::broken_intra_doc_links,
+    unreachable_pub,
+    unreachable_patterns,
+    unused,
+    unused_results,
+    unused_qualifications,
+    while_true,
+    trivial_casts,
+    trivial_bounds,
+    trivial_numeric_casts,
+    unconditional_panic,
+    clippy::all
+)]
+
 pub mod palettes;
 
 use enum_dispatch::enum_dispatch;
 use palettes::*;
 
+/// A palette is used to render a [`Base16Color`] into RBG values or a hex string.
 #[enum_dispatch(Base16Palette)]
 #[derive(Debug, Clone, Copy, PartialEq, Eq)]
 pub enum Palette {

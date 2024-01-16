@@ -1,3 +1,5 @@
+#![allow(missing_docs)]
+
 /// This module contains the color palettes that are supported by [base16](). These can be
 /// converted into styles used by Ratatui.
 mod default;
@@ -355,51 +357,51 @@ mod create {
                     match color {
                         crate::Base16Color::Shade(crate::Base16Shade::Dark(
                             crate::Shade::Darkest,
-                        )) => std::concat!("#", $s01),
+                        )) => core::concat!("#", $s01),
                         crate::Base16Color::Shade(crate::Base16Shade::Dark(
                             crate::Shade::Darker,
-                        )) => std::concat!("#", $s02),
+                        )) => core::concat!("#", $s02),
                         crate::Base16Color::Shade(crate::Base16Shade::Dark(
                             crate::Shade::Lighter,
-                        )) => std::concat!("#", $s03),
+                        )) => core::concat!("#", $s03),
                         crate::Base16Color::Shade(crate::Base16Shade::Dark(
                             crate::Shade::Lightest,
-                        )) => std::concat!("#", $s04),
+                        )) => core::concat!("#", $s04),
                         crate::Base16Color::Shade(crate::Base16Shade::Light(
                             crate::Shade::Darkest,
-                        )) => std::concat!("#", $s05),
+                        )) => core::concat!("#", $s05),
                         crate::Base16Color::Shade(crate::Base16Shade::Light(
                             crate::Shade::Darker,
-                        )) => std::concat!("#", $s06),
+                        )) => core::concat!("#", $s06),
                         crate::Base16Color::Shade(crate::Base16Shade::Light(
                             crate::Shade::Lighter,
-                        )) => std::concat!("#", $s07),
+                        )) => core::concat!("#", $s07),
                         crate::Base16Color::Shade(crate::Base16Shade::Light(
                             crate::Shade::Lightest,
-                        )) => std::concat!("#", $s08),
+                        )) => core::concat!("#", $s08),
                         crate::Base16Color::Accent(crate::Base16Accent::Accent00) => {
-                            std::concat!("#", $s09)
+                            core::concat!("#", $s09)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent01) => {
-                            std::concat!("#", $s10)
+                            core::concat!("#", $s10)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent02) => {
-                            std::concat!("#", $s11)
+                            core::concat!("#", $s11)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent03) => {
-                            std::concat!("#", $s12)
+                            core::concat!("#", $s12)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent04) => {
-                            std::concat!("#", $s13)
+                            core::concat!("#", $s13)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent05) => {
-                            std::concat!("#", $s14)
+                            core::concat!("#", $s14)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent06) => {
-                            std::concat!("#", $s15)
+                            core::concat!("#", $s15)
                         }
                         crate::Base16Color::Accent(crate::Base16Accent::Accent07) => {
-                            std::concat!("#", $s16)
+                            core::concat!("#", $s16)
                         }
                     }
                 }
